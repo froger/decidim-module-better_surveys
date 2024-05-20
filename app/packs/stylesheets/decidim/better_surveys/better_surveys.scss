@@ -1,0 +1,36 @@
+.better_surveys {
+    background-color: var(--grey2);
+    padding: 64px 0;
+    & .questionnaire-question {
+        &,
+        & a {
+          font-size: 20px;
+        }
+        line-height: 120%;
+    }
+    
+    & > .row.columns {
+        display: none;
+    }
+    & > .row.column {
+        @extend .medium-centered;
+        @extend .large-9;
+
+        max-width: 55.25%
+    }
+    & .card {
+        background-color: transparent;
+        border-width: 0;
+        & .section {
+            width: 100%;
+        }
+    }
+    [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea{
+        background-color: var(--grey1);
+    }
+    button[type=submit]{
+        padding: 20px 80px;
+        gap: 8px;
+        height: 53px;
+    }
+}
